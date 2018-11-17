@@ -2,8 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
-import Header from './header'
+import backgroundImage from '../images/background.svg'
+import Header from './Header'
+
+
+const Wrapper = styled.div`
+  height: 83vh;
+  background:url(${backgroundImage});
+  background-repeat: no-repeat;
+  background-size: cover;
+`
+
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,16 +40,12 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
+        <Wrapper>
+          <div className="container">
+            {children}
+          </div>
+        </Wrapper>
+        
       </>
     )}
   />
