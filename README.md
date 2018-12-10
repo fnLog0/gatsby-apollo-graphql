@@ -95,3 +95,17 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+```javascript
+import React from 'react'
+import swal from '@sweetalert/with-react'
+
+swal(
+  <div>
+    <h1>Hello world!</h1>
+    <p>
+      This is now rendered with JSX!
+    </p>
+  </div>
+)
+```

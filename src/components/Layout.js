@@ -10,9 +10,7 @@ import Header from './Header'
 
 const Wrapper = styled.div`
   height: 83vh;
-  background:url(${backgroundImage});
-  background-repeat: no-repeat;
-  background-size: cover;
+  background:#f6f6f2;
 `
 
 

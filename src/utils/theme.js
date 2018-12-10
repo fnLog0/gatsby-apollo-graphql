@@ -3,13 +3,16 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const colors = {
-  pumpkin: '#37b091',
+  blueish: 'rgba(1, 54, 136, 1)',
+  grey:'rgba(42,42,42,.1)',
   white:'#ffff'
 };
 
 export default {
-  background: colors.pumpkin,
-  brandColor:colors.white
+  background: colors.white,
+  brandColor:colors.white,
+  primaryColor:colors.blueish,
+  secondaryColor:colors.grey
 };
 
 createGlobalStyle`
